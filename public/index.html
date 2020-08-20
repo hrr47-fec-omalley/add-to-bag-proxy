@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>MYKEA</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Zach Mansell">
+  <meta name="description" content="An IKEA product page clone.">
+  <style>
+    header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #container {
+      display: grid;
+      margin-top: 100px;
+      margin-left: 200px;
+      grid-column-gap: 1.25rem;
+      grid-template-columns: repeat(13, minmax(0, 1fr));
+    }
+
+    #main-title-pictures {
+      grid-row: 3;
+      grid-column-end: span 8;
+    }
+
+    #addtobag {
+      grid-row: 3;
+      grid-column-end: span 2;
+    }
+
+    #similar-products {
+      grid-row: 4;
+      grid-column-end: span 8;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="https://mykea-main-title-pictures.s3.us-east-2.amazonaws.com/ikea-header.png" />
+  </header>
+  <div id="container">
+    <div id="main-title-pictures"></div>
+    <div id="addtobag"></div>
+
+  </div>
+    <div id="app"></div>
+    <div id="similar-products"></div>
+    <!-- <script src="http://localhost:3000/public/bundle.js"></script> -->
+    <script src="http://localhost:3003/public/bundle.js"></script>
+    <script src="http://localhost:3001/public/bundle.js"></script>
+    <script src="http://localhost:3002/public/bundle.js"></script>
+
+</body>
+
+</html>
